@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>H-M || Home</title>
+<link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
+<link rel="stylesheet" type="text/css" href="index.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Lobster|Playball|Raleway|Roboto" rel="stylesheet">
+<script>
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 150,
+                header = document.querySelector("header");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+            } else {
+                if (classie.has(header,"smaller")) {
+                    classie.remove(header,"smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
+</script>
+</head>
+<body class="body" onLoad="slideA()">
+<header>
+<div class="mainHeader">
+<div class="header">
+<h1>
+Home<d>-</d>Made
+</h1>
+</div>
+</div>
+</header>
+<div class="intro">
+<f>HOME is where our story begins</f>
+<p>By wisdom a house is built, And by understanding it is established; 
+And by knowledge the rooms are filled with all precious and pleasant riches. - 
+<d>Proverbs 24:3-4</d></p>
+<div class="inside">
+</div>
+</div>
+<div class="main">
+<b>We provide a wide range of home services that we regard ourselves 
+as a one stop home service provider.</b><br><br>
+<a href="Services/Services.html"><div id="services">See All Services</div></a>
+<a href="ServiceProvider/ServiceProvider.html"><div id="provider">Become a service provider</div></a>
+</div>
+<div class="Mainfooter">
+<d>
+<a href="#">About</a><br>
+<a href="#">Contact</a><br>
+<a href="#">Careers</a><br>
+</d>
+</div>
+<div class="footer">
+<p>Copyright &copy; <a href="#" title="Don't Do Evil">Home-Made Inc</a> 2016 - <year></year><br> 
+by Sipho Mabena</p>
+</div>
+
+<script src="myScript.js"></script>
+</body>
+</html>
